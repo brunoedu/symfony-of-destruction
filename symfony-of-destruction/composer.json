@@ -2,9 +2,9 @@
     "name": "bruno/symfony-of-destruction",
     "license": "proprietary",
     "type": "project",
-    "autoload": {
+    "autoload": {        
         "psr-4": {
-            "AppBundle\\": "src/AppBundle"
+            "": "src/"
         },
         "classmap": [
             "app/AppKernel.php",
@@ -50,7 +50,13 @@
         ],
         "post-update-cmd": [
             "@symfony-scripts"
-        ]
+        ],
+        "scripts": {
+            "warmup": [
+                "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+                "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+            ]
+        }
     },
     "config": {
         "sort-packages": true
