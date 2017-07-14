@@ -1,0 +1,8 @@
+api_destruction:
+    resource: "@ApiDestructionBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

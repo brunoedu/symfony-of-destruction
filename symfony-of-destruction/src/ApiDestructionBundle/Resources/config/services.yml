@@ -1,0 +1,4 @@
+services:
+#    api_destruction.example:
+#        class: ApiDestructionBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
