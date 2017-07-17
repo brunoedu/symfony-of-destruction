@@ -2,7 +2,7 @@
     "name": "bruno/symfony-of-destruction",
     "license": "proprietary",
     "type": "project",
-    "autoload": {        
+    "autoload": {
         "psr-4": {
             "": "src/"
         },
@@ -52,10 +52,10 @@
             "@symfony-scripts"
         ],
         "scripts": {
-            "warmup": [
-                "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-                "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
-            ]
+          "warmup": [
+              "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+              "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+          ]
         }
     },
     "config": {
