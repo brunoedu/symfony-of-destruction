@@ -20,6 +20,16 @@ imports:
 #         console:
 #             type: console
 #             process_psr_3_messages: false
+# monolog:
+#     handlers:
+#         main:
+#             action_level: %monolog_action_level%
+# monolog:
+#     handlers:
+#         nested:
+#             type:  stream
+#             path:  "php://stderr"
+#             level: debug
 monolog:
     handlers:
         main:
